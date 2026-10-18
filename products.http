@@ -1,0 +1,28 @@
+
+### Add a product
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 999.99
+}
+
+###
+GET http://localhost:8080/products
+
+### Get product by ID
+GET http://localhost:8080/products/1
+
+###
+GET http://localhost:8080/products/99
+
+
+### Delete product with ID 1
+DELETE http://localhost:8080/products/1
+
+###
+GET http://localhost:8080/products
+
+### Search products by name
+GET http://localhost:8080/products/search?name=Laptop
