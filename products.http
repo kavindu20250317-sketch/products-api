@@ -26,3 +26,14 @@ GET http://localhost:8080/products
 
 ### Search products by name
 GET http://localhost:8080/products/search?name=Laptop
+
+### Add a Digital Product
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Java Programming E-book",
+  "price": 19.99,
+  "downloadUrl": "/downloads/java-programming.pdf",
+  "fileSizeMB": 3.5
+}
